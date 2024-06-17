@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: black;
+    transition: 1s ease all
 }
 
 .navbar-container {
@@ -18,6 +19,7 @@ body {
     height: 100%;
     color: white;
     font-family: "Sen", sans-serif;
+    transition: 1s ease all
 }
 
 .logo-container {
@@ -75,6 +77,7 @@ body {
     align-items: center;
     justify-content: space-around;
     position: relative;
+    transition: 1s ease all
 }
 
 .toggle-icon {
@@ -89,6 +92,7 @@ body {
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 1s ease all;
 }
 
 .sidebar {
@@ -101,18 +105,21 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 150px;
+    transition: 1s ease all
 }
 
 .left-menu-icon {
     color: white;
     font-size: 20px;
     margin-bottom: 50px;
+    transition: 1s ease all
 }
 
 .container {
     background-color: #151515;
     min-height: calc(100vh - 50px);
     color: white;
+    transition: 1s ease all
 }
 
 .content-container {
@@ -242,33 +249,55 @@ body {
 
 .container.active{
     background-color: white;
+    transition: 1s ease all
 }
 
 .movie-list-item.active {
     color: black;
+    transition: 1s ease all
 }
 
 .navbar-container.active{
     background-color: white;
     color: black;
+    transition: 1s ease all
 }
 
 .sidebar.active{
     background-color: white;
+    transition: 1s ease all
 }
 
 .left-menu-icon.active {
     color: black;
+    transition: 1s ease all
 }
 
 .toggle.active {
     background-color: black;
+    transition: 1s ease all
 }
 
 .toggle-ball.active {
     background-color: white;
     transform: translateX(-20px);
-    transition: all 1s ease-in-out;
+    transition: 1s ease all
+}
+
+.movie-list-title.active {
+    color: black;
+  }
+  
+
+  @media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+    .container {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 }
 
 
